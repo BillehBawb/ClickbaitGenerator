@@ -1,0 +1,13 @@
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\bin\Debug\ClickbaitGenerator.exe.config
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\bin\Debug\ClickbaitGenerator.exe
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\bin\Debug\ClickbaitGenerator.pdb
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\bin\Debug\MetroFramework.dll
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\bin\Debug\MetroFramework.Fonts.dll
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.csprojAssemblyReference.cache
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.Properties.Resources.resources
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.csproj.GenerateResource.cache
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.csproj.CoreCompileInputs.cache
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.csproj.CopyComplete
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.exe
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.pdb
+c:\users\billeh\source\repos\ClickbaitGenerator\ClickbaitGenerator\obj\Debug\ClickbaitGenerator.Form1.resources
