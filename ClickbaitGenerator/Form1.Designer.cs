@@ -37,18 +37,21 @@
             this.gameInput = new MetroFramework.Controls.MetroTextBox();
             this.gameLabel = new MetroFramework.Controls.MetroLabel();
             this.vlogsTab = new MetroFramework.Controls.MetroTabPage();
-            this.commentaryTab = new MetroFramework.Controls.MetroTabPage();
-            this.reactionsTab = new MetroFramework.Controls.MetroTabPage();
+            this.generateVlogsTitle = new MetroFramework.Controls.MetroTextBox();
+            this.generateVlogsButton = new MetroFramework.Controls.MetroButton();
+            this.somethingThatHappenedVlogsInput = new MetroFramework.Controls.MetroTextBox();
+            this.somethingThatHappenedVlogsLabel = new MetroFramework.Controls.MetroLabel();
+            this.locationInput = new MetroFramework.Controls.MetroTextBox();
+            this.locationLabel = new MetroFramework.Controls.MetroLabel();
             this.tabControl.SuspendLayout();
             this.gamingTab.SuspendLayout();
+            this.vlogsTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.gamingTab);
             this.tabControl.Controls.Add(this.vlogsTab);
-            this.tabControl.Controls.Add(this.commentaryTab);
-            this.tabControl.Controls.Add(this.reactionsTab);
             this.tabControl.Location = new System.Drawing.Point(24, 63);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -124,33 +127,70 @@
             // 
             // vlogsTab
             // 
+            this.vlogsTab.Controls.Add(this.generateVlogsTitle);
+            this.vlogsTab.Controls.Add(this.generateVlogsButton);
+            this.vlogsTab.Controls.Add(this.somethingThatHappenedVlogsInput);
+            this.vlogsTab.Controls.Add(this.somethingThatHappenedVlogsLabel);
+            this.vlogsTab.Controls.Add(this.locationInput);
+            this.vlogsTab.Controls.Add(this.locationLabel);
             this.vlogsTab.HorizontalScrollbarBarColor = true;
             this.vlogsTab.Location = new System.Drawing.Point(4, 35);
             this.vlogsTab.Name = "vlogsTab";
             this.vlogsTab.Size = new System.Drawing.Size(530, 246);
-            this.vlogsTab.TabIndex = 1;
+            this.vlogsTab.TabIndex = 4;
             this.vlogsTab.Text = "Vlogs";
             this.vlogsTab.VerticalScrollbarBarColor = true;
             // 
-            // commentaryTab
+            // generateVlogsTitle
             // 
-            this.commentaryTab.HorizontalScrollbarBarColor = true;
-            this.commentaryTab.Location = new System.Drawing.Point(4, 35);
-            this.commentaryTab.Name = "commentaryTab";
-            this.commentaryTab.Size = new System.Drawing.Size(530, 246);
-            this.commentaryTab.TabIndex = 2;
-            this.commentaryTab.Text = "Commentary";
-            this.commentaryTab.VerticalScrollbarBarColor = true;
+            this.generateVlogsTitle.Location = new System.Drawing.Point(4, 220);
+            this.generateVlogsTitle.Name = "generateVlogsTitle";
+            this.generateVlogsTitle.ReadOnly = true;
+            this.generateVlogsTitle.Size = new System.Drawing.Size(523, 23);
+            this.generateVlogsTitle.TabIndex = 7;
             // 
-            // reactionsTab
+            // generateVlogsButton
             // 
-            this.reactionsTab.HorizontalScrollbarBarColor = true;
-            this.reactionsTab.Location = new System.Drawing.Point(4, 35);
-            this.reactionsTab.Name = "reactionsTab";
-            this.reactionsTab.Size = new System.Drawing.Size(530, 246);
-            this.reactionsTab.TabIndex = 3;
-            this.reactionsTab.Text = "Reactions";
-            this.reactionsTab.VerticalScrollbarBarColor = true;
+            this.generateVlogsButton.Location = new System.Drawing.Point(337, 151);
+            this.generateVlogsButton.Name = "generateVlogsButton";
+            this.generateVlogsButton.Size = new System.Drawing.Size(190, 63);
+            this.generateVlogsButton.TabIndex = 6;
+            this.generateVlogsButton.Text = "Generate Title";
+            this.generateVlogsButton.Click += new System.EventHandler(this.generateVlogsButton_Click);
+            // 
+            // somethingThatHappenedVlogsInput
+            // 
+            this.somethingThatHappenedVlogsInput.Location = new System.Drawing.Point(246, 42);
+            this.somethingThatHappenedVlogsInput.Name = "somethingThatHappenedVlogsInput";
+            this.somethingThatHappenedVlogsInput.Size = new System.Drawing.Size(147, 23);
+            this.somethingThatHappenedVlogsInput.TabIndex = 5;
+            this.somethingThatHappenedVlogsInput.TextChanged += new System.EventHandler(this.somethingThatHappenedVlogsInput_TextChanged);
+            // 
+            // somethingThatHappenedVlogsLabel
+            // 
+            this.somethingThatHappenedVlogsLabel.AutoSize = true;
+            this.somethingThatHappenedVlogsLabel.Location = new System.Drawing.Point(4, 42);
+            this.somethingThatHappenedVlogsLabel.Name = "somethingThatHappenedVlogsLabel";
+            this.somethingThatHappenedVlogsLabel.Size = new System.Drawing.Size(236, 19);
+            this.somethingThatHappenedVlogsLabel.TabIndex = 4;
+            this.somethingThatHappenedVlogsLabel.Text = "Something that happened in the video:";
+            // 
+            // locationInput
+            // 
+            this.locationInput.Location = new System.Drawing.Point(71, 13);
+            this.locationInput.Name = "locationInput";
+            this.locationInput.Size = new System.Drawing.Size(147, 23);
+            this.locationInput.TabIndex = 3;
+            this.locationInput.TextChanged += new System.EventHandler(this.locationInput_TextChanged);
+            // 
+            // locationLabel
+            // 
+            this.locationLabel.AutoSize = true;
+            this.locationLabel.Location = new System.Drawing.Point(4, 13);
+            this.locationLabel.Name = "locationLabel";
+            this.locationLabel.Size = new System.Drawing.Size(61, 19);
+            this.locationLabel.TabIndex = 2;
+            this.locationLabel.Text = "Location:";
             // 
             // Form1
             // 
@@ -164,6 +204,8 @@
             this.tabControl.ResumeLayout(false);
             this.gamingTab.ResumeLayout(false);
             this.gamingTab.PerformLayout();
+            this.vlogsTab.ResumeLayout(false);
+            this.vlogsTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -179,8 +221,12 @@
         private MetroFramework.Controls.MetroTextBox gameInput;
         private MetroFramework.Controls.MetroLabel gameLabel;
         private MetroFramework.Controls.MetroTabPage vlogsTab;
-        private MetroFramework.Controls.MetroTabPage commentaryTab;
-        private MetroFramework.Controls.MetroTabPage reactionsTab;
+        private MetroFramework.Controls.MetroTextBox generateVlogsTitle;
+        private MetroFramework.Controls.MetroButton generateVlogsButton;
+        private MetroFramework.Controls.MetroTextBox somethingThatHappenedVlogsInput;
+        private MetroFramework.Controls.MetroLabel somethingThatHappenedVlogsLabel;
+        private MetroFramework.Controls.MetroTextBox locationInput;
+        private MetroFramework.Controls.MetroLabel locationLabel;
     }
 }
 
